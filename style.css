@@ -602,14 +602,25 @@ footer p{
     }
 
     .nav-bar{
+        width: 100%;
+    }
+
+    .nav-bar ul{
         display: none;
     }
 
+    
     .header{
         display: flex;
-        justify-content: flex-end;
+        justify-content: space-between ;
+        align-items: flex-start;
+        /* justify-content: flex-end; */
     }
-
+    
+    .logo{
+        display: inline;
+    }
+    
     .menu-moviles{
         margin: 0px;
         display: block;
