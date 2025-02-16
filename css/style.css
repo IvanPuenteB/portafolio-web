@@ -683,6 +683,10 @@ footer p{
         margin-left: 0;
     }
 
+    .img-container2{
+        max-width: 80%;
+    }
+
     .button{
         margin-bottom: 100px;
         margin-left: auto;
