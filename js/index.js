@@ -32,7 +32,7 @@ form.addEventListener("submit", async (e) =>{
     delete jsonData["last-name"]
 
     try {
-        const response = await fetch("http://localhost:3000/send-email", {
+        const response = await fetch("https://backend-emailjs-kpm64bphy-ivanpuentes-projects.vercel.app/send-email", {
             
             method: "POST",
             headers: {"Content-Type" : "application/json"},
