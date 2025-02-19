@@ -4,8 +4,14 @@ const cors = require("cors");
 const nodemailer = require("nodemailer");
 
 const app = express();
-app.use(express.json());
-app.use(cors());
+app.use(express.json()); 
+
+const corsOptions = {
+    origin: "https://ivanpuenteb.github.io", // El dominio del frontend
+    methods: "GET,HEAD,PUT,PATCH,POST,DELETE",
+    allowedHeaders: "Content-Type, Authorization"
+  };
+app.use(cors(corsOptions));
 
 const rateLimit = require("express-rate-limit");
 
