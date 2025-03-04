@@ -4,6 +4,26 @@ const abrir = document.querySelector('.menu-moviles'); // Botón de abrir menú
 const nav = document.querySelector('.nav-list'); // Menú
 const cerrar = document.querySelector('#cerrar'); // Botón de cerrar menú
 const form = document.getElementById("contact-form")
+const phidden = document.querySelector('.hidden')
+const btnSeeMore = document.querySelector('#button-seeMore') 
+
+const botones = document.querySelectorAll(".button")
+
+
+botones.forEach(button => {
+    button.addEventListener("click", function() {
+        const card = this.closest(".card"); // Encuentra la tarjeta contenedora del botón
+        const hiddenText = card.querySelector(".hidden"); // Busca el párrafo oculto en esa tarjeta
+        
+        if (hiddenText) {
+            hiddenText.classList.toggle("show");
+        }
+    });
+});
+
+btnSeeMore.addEventListener("click", () => {
+    phidden.classList.toggle("show")
+})
 
 // Función para abrir el menú
 abrir.addEventListener("click", () => {

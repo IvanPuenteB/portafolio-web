@@ -18,21 +18,21 @@
       <a id="logo" href="#" class="logo">Portafolio</a>
       <ul  id="nav" class="nav-list">
         <button id="cerrar"><img src="./images/cerrar.png" alt=""></button>
-        <li class="list-item"><a href="#">Home</a></li>
-        <li class="list-item"><a href="#">About</a></li>
-        <li class="list-item"><a href="#">Services</a></li>
-        <li class="list-item"><a href="#">Portfolio</a></li>
-        <li class="list-item"><a href="#">Contact</a></li>
+        <li class="list-item"><a href="#inicio">Inicio</a></li>
+        <li class="list-item"><a href="#about">Sobre mí</a></li>
+        <li class="list-item"><a href="#servicios">Servicios</a></li>
+        <li class="list-item"><a href="#proyectos">Proyectos</a></li>
+        <li class="list-item"><a href="#contacto">Contacto</a></li>
       </ul>
       <a id="menu" href="#" class="menu-moviles"><img src="images/menu.png" alt=""></a>
     </nav>
   </header>
 
   <main class="main-container">
-    <section class="home flex">
+    <section class="home flex" id="inicio">
       <div class="div-container">
-        <h1>Hello, I'm <br><strong>Ivan Puente</strong></h1>
-        <h2>I'm a Software Engineer</h2>
+        <h1>Hola soy<br><strong>Ivan Puente</strong></h1>
+        <h2>Ingeniero de Sofware</h2>
         <p>Soy un profesional comprometido con la responsabilidad, enfocado a las soluciones. Soy una persona íntegra,
           competente, flexible al tratar con los demás, generoso, honesto, con la confianza y determinación de lograr
           mis objetivos propuestos.
@@ -40,7 +40,7 @@
         <a class="icon" href="#"><i class="fa-brands fa-facebook"></i>Facebook</a>
         <a class="icon" href="#"><i class="fa-brands fa-youtube"></i>YouTube</a>
         <a class="icon" href="#"><i class="fa-brands fa-instagram"></i>Instagram</a>
-        <a href="/resources/Curriculum.pdf" download="Curriculum_IvanPuente.pdf" id="button-download" class="button dw">Download CV</a>
+        <a href="resources/Curriculum.pdf" download="Curriculum_IvanPuente.pdf" id="button-download" class="button dw">Download CV</a>
 
       </div>
       <div class="img-container">
@@ -48,7 +48,7 @@
       </div>
     </section>
 
-    <section class="about-me">
+    <section class="about-me" id="about">
 
       <div class="img-container2">
         <img src="images/yo.jpeg" alt="Another photo of Ivan Puente">
@@ -57,17 +57,17 @@
       <div class="about-container">
         <h2>About Me</h2>
         <h3>Software Engineer</h3>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus numquam eaque fuga fugiat
-          quae culpa commodi, praesentium, nesciunt nam ipsum porro, eligendi iure et qui impedit explicabo nihil
-          excepturi?</p>
-          <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit possimus numquam eaque fuga fugiat
-            quae culpa commodi, praesentium, nesciunt nam ipsum porro, eligendi iure et qui impedit explicabo nihil
-            excepturi?</p>
+        <p>Soy Ivan Puente una persona con solidos valores y principios como el ser integro, respetuoso, comprometido, perseverante y diciplinado. </p>
+        <p>
+          Soy un apasionado por la tecnología desde niño, me encanta la innovación, la creatividad y aprender cosas por mi cuenta.
+        </p>
+        </p>
+          <p class="hidden">Gracias a esto me ha llevado a aprender temas relacionado con marketing digital, ventas, diseño grafico y analisis de datos, actualmente busco especializarme en el Desarrollo UI/UX. </p>
         <button class="button" id="button-seeMore">See More</button>
       </div>
     </section>
 
-    <section class="our-services">
+    <section class="our-services" id="servicios">
       <header>
         <h2>My Services</h2>
       </header>
@@ -78,10 +78,10 @@
           <path
             d="M128 32C92.7 32 64 60.7 64 96l0 256 64 0 0-256 384 0 0 256 64 0 0-256c0-35.3-28.7-64-64-64L128 32zM19.2 384C8.6 384 0 392.6 0 403.2C0 445.6 34.4 480 76.8 480l486.4 0c42.4 0 76.8-34.4 76.8-76.8c0-10.6-8.6-19.2-19.2-19.2L19.2 384z" />
         </svg>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non molestiae iste, blanditiis pariatur
-          fugiat amet asperiores quia animi eius, esse a perferendis sed ratione, voluptate iure? Cupiditate, illo non.
+        <p>Desarrollo páginas web dinamicas y responsivas utilizando tecnologías como HTML, CSS, Javascript, ReactJS y Tailwind CSS para brindar una mejor experiencia de usuario.
         </p>
-        <button class="button">Read More</button>
+        <p class="hidden">También manejo tecnologías como Nodejs, Python para realizar APIS y utilizo SQL para manejar bases de datos.</p>
+        <button class="button readMore">Read More</button>
       </article>
       <article class="graphic-design card">
         <h4>Graphic Design</h4>
@@ -91,34 +91,34 @@
             d="M 20 3 C 14.494917 3 10 7.494921 10 13 C 10 18.505079 14.494917 23 20 23 C 25.505083 23 30 18.505079 30 13 C 30 7.494921 25.505083 3 20 3 z M 20 6 C 23.883764 6 27 9.1162385 27 13 C 27 16.883762 23.883764 20 20 20 C 16.116236 20 13 16.883762 13 13 C 13 9.1162385 16.116236 6 20 6 z M 37 22 C 36.485 22.327 36.102078 22.800266 35.955078 22.947266 C 35.794078 23.108266 35.652297 23.289234 35.529297 23.490234 L 30.751953 31.287109 C 29.776953 32.878109 29.747687 34.872234 30.679688 36.490234 L 33 40.171875 L 43 40.171875 L 45.320312 36.490234 C 46.252313 34.871234 46.223047 32.878109 45.248047 31.287109 L 40.470703 23.490234 C 40.347703 23.289234 40.205922 23.108266 40.044922 22.947266 C 39.897922 22.800266 39.515 22.327 39 22 L 39 31.447266 C 39.595 31.793266 40 32.432875 40 33.171875 C 40 34.276875 39.105 35.171875 38 35.171875 C 36.895 35.171875 36 34.276875 36 33.171875 C 36 32.433875 36.405 31.794266 37 31.447266 L 37 22 z M 7.9785156 27 C 5.7845156 27 4 28.784516 4 30.978516 L 4 32.5 C 4 35.812 5.8846406 38.6745 9.3066406 40.5625 C 12.153641 42.1345 15.952 43 20 43 C 24.048 43 27.846359 42.1345 30.693359 40.5625 C 30.741359 40.5355 30.781125 40.505516 30.828125 40.478516 L 29.220703 37.925781 C 26.747703 39.293781 23.367 40 20 40 C 13.54 40 7 37.424 7 32.5 L 7 30.978516 C 7 30.438516 7.4375156 30 7.9785156 30 L 29.193359 30 L 31.033203 27 L 7.9785156 27 z M 33 42 L 33 44.001953 C 33 45.105953 33.896 46.001953 35 46.001953 L 41 46 C 42.105 46 43 45.105 43 44 L 43 42 L 33 42 z">
           </path>
         </svg>
-        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Quidem non molestiae iste, blanditiis pariatur
-          fugiat amet asperiores quia animi eius, esse a perferendis sed ratione, voluptate iure? Cupiditate, illo non.
+        <p>Soy Técnico especializado en Diseño Gráfico, aplico mis conocimientos en la creación de logotipos, diseño web responsivo, creación de flayers, y edición de fotografía.
         </p>
-        <button class="button">Read More</button>
+        <p class="hidden">He explorado temas relacionados con el marketing digital y ventas creando mi propio negocio de branding para emprendedores. </p>
+        <button class="button" id="read-graphic">Read More</button>
       </article>
     </section>
 
-    <section class="our-projects">
+    <section class="our-projects" id="proyectos">
       <header>
         <h2>Our Projects</h2>
       </header>
       <div class="grid-container">
         <article>
-          <a href="#"><img src="images/pokedex.png" alt="Project 1"></a>
+          <a href="#"><img class="pokedex-img" src="images/pokedex.png" alt="Project 1"></a>
         </article>
         <article>
-          <a href="#"><img src="images/dark-monst.png" alt="Project 2"></a>
+          <a href="#"><img class="perritos-img" src="images/perritos.jpeg" alt="Project 2"></a>
         </article>
         <article>
-          <a href="#"><img src="images/Garcia.png" alt="Project 4"></a>
+          <a href="#"><img class="garcia-img" src="images/Garcia.png" alt="Project 4"></a>
         </article>
         <article>
-          <a href="#"><img src="images/Brain-training.png" alt="Project 3"></a>
+          <a href="#"><img class="brain-img" src="images/Brain-training.png" alt="Project 3"></a>
         </article>
       </div>
     </section>
 
-    <section>
+    <section class="contacto" id="contacto">
       <form id="contact-form" class="form" method="post">
         <fieldset>
           <legend>Contact Me</legend>
