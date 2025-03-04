@@ -6,9 +6,16 @@ const cerrar = document.querySelector('#cerrar'); // Botón de cerrar menú
 const form = document.getElementById("contact-form")
 const phidden = document.querySelector('.hidden')
 const btnSeeMore = document.querySelector('#button-seeMore') 
-
+const proyectos = document.querySelectorAll(".error-404")
 const botones = document.querySelectorAll(".button")
 
+
+proyectos.forEach(proyecto => {
+    proyecto.addEventListener("click", (e)=>{
+        e.preventDefault()
+        alert("Se actualizará pronto")
+    })
+})
 
 botones.forEach(button => {
     button.addEventListener("click", function() {
@@ -35,7 +42,6 @@ cerrar.addEventListener("click", () => {
     nav.classList.remove("abrir"); // Oculta el menú con animación
 });
 
-console.log(download)
 
 download.addEventListener("click", (e) => {
     download.style.background = "#333";
